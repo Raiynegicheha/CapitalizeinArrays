@@ -1,0 +1,17 @@
+Challenge 2:
+Given an array of strings, return an array where 
+the first letter of each string is capitalized
+*/
+
+const names = ["alice", "bob", "charlie", "danielle"]
+// -->        ["Alice", "Bob", "Charlie", "Danielle"]
+// Your code here
+
+var array = names.map((name)=>{
+    var capital = name.split('').slice(0,1).toString().toUpperCase()
+    var word = capital + name.slice(1)
+    return word
+    console.log(word)
+})
+
+console.log(array)
